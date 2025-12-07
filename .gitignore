@@ -1,0 +1,45 @@
+# OS files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+
+# Build files (if using build tools)
+dist/
+build/
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Generated PDF files (but allow resources/ folder PDFs)
+*.pdf
+!resources/*.pdf
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv

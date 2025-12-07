@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us for a Quote | Dream Team Automation</title>
+    <meta name="description" content="Contact Dream Team Automation for automation engineering, staffing, and design services. Located in Clinton Twp., MI. Call (586) 604-6428.">
+    <meta name="keywords" content="contact Dream Team Automation, automation quote, engineering services Michigan">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us for a Quote | Dream Team Automation">
+    <meta property="og:description" content="Get in touch for automation engineering and staffing services.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            margin-top: 2rem;
+            border: 1px solid var(--border-subtle);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Dream Team Automation Logo">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-title">Dream Team Automation</span>
+                    <span class="nav-logo-subtitle">Precision Tooling Design</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="staffing.html">Staffing</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Contact Us for a Quote</h1>
+            <p>Tell us a bit about your project and we'll get back to you quickly with next steps and pricing.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <div class="two-col">
+            <!-- Contact Info -->
+            <div class="fade-in">
+                <div class="card mb-2">
+                    <h3 class="card-title mb-2">Dream Team Automation, LLC</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>41800 Hayes Rd. Suite #411<br>Clinton Twp., MI 48038</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+15866046428">+1 (586) 604-6428</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:sales@dreamteamautomation.com">sales@dreamteamautomation.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-placeholder">
+                    <span>Map to our office<br>(Google Maps embed placeholder)</span>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="fade-in stagger-2">
+                <div class="card">
+                    <h3 class="card-title mb-2">Request a Quote</h3>
+                    <form action="https://formspree.io/f/placeholder" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company</label>
+                                <input type="text" name="company" class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" name="phone" class="form-input" placeholder="Optional">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Service <span class="required">*</span></label>
+                                <select name="service" class="form-select" required>
+                                    <option value="">Select one...</option>
+                                    <option value="Staffing">Staffing</option>
+                                    <option value="Process Validation">Process Validation</option>
+                                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                    <option value="Body-in-White Welding">Body-in-White Welding</option>
+                                    <option value="Rapid Prototyping">Rapid Prototyping</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Budget (USD)</label>
+                                <select name="budget" class="form-select">
+                                    <option value="Not set">Not set</option>
+                                    <option value="< 10k">&lt; 10k</option>
+                                    <option value="10k – 50k">10k – 50k</option>
+                                    <option value="50k – 250k">50k – 250k</option>
+                                    <option value="> 250k">&gt; 250k</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Timeline</label>
+                            <select name="timeline" class="form-select">
+                                <option value="Flex">Flex</option>
+                                <option value="ASAP">ASAP</option>
+                                <option value="2–4 weeks">2–4 weeks</option>
+                                <option value="1–3 months">1–3 months</option>
+                                <option value="3+ months">3+ months</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Project Details <span class="required">*</span></label>
+                            <textarea name="message" class="form-textarea" required placeholder="Tip: include deliverables, target dates, and any standards you follow."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Attach File (PDF, STEP, STL, ZIP – max 10MB)</label>
+                            <input type="file" name="attachment" id="attachment" accept=".pdf,.step,.stp,.stl,.zip">
+                            <small style="color: var(--text-muted); display: block; margin-top: 0.5rem;">One file optional. For multiple files, zip them first.</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="consent" required>
+                                <span style="color: var(--text-secondary);">I agree to be contacted about this request.</span>
+                            </label>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1rem;">
+                            <button type="submit" class="btn btn-primary" style="flex: 1;">
+                                <span>Send Request</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 80px;">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Dream Team Automation, LLC</p>
+                <div class="footer-badge">
+                    <span class="footer-text">Clinton Twp., MI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

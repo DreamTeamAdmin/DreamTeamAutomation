@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Dream Team Automation</title>
+    <meta name="description" content="Join Dream Team Automation. We're hiring Engineering Managers, Design Leaders, Mechanical Designers, Project Engineers, and more. Apply today.">
+    <meta name="keywords" content="engineering jobs, mechanical designer jobs, project engineer careers, automation jobs Michigan">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Careers | Dream Team Automation">
+    <meta property="og:description" content="Join our team of automation professionals.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Dream Team Automation Logo">
+                <div class="nav-logo-text">
+                    <span class="nav-logo-title">Dream Team Automation</span>
+                    <span class="nav-logo-subtitle">Precision Tooling Design</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="staffing.html">Staffing</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Careers</h1>
+            <p>Help us design and deliver world-class automation lines. Apply below.</p>
+        </div>
+    </header>
+
+    <!-- Application Form -->
+    <section class="container">
+        <div class="two-col">
+            <div class="fade-in">
+                <div class="card">
+                    <h3 class="card-title mb-2">Submit Your Application</h3>
+                    <form action="https://formspree.io/f/placeholder" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="form-label">Position of Interest <span class="required">*</span></label>
+                            <select name="position" class="form-select" required>
+                                <option value="">Select a role…</option>
+                                <option value="Engineering Manager">Engineering Manager</option>
+                                <option value="Design Lead / Checker">Design Lead / Checker</option>
+                                <option value="Mechanical Designer (BIW / Fixtures / EOAT)">Mechanical Designer (BIW / Fixtures / EOAT)</option>
+                                <option value="Project Engineer">Project Engineer</option>
+                                <option value="Simulation / Process">Simulation / Process</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Availability (Start Date)</label>
+                            <input type="text" name="availability" class="form-input" placeholder="e.g., Immediately, 2 weeks notice">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email <span class="required">*</span></label>
+                                <input type="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" name="phone" class="form-input" placeholder="Optional">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">City / State</label>
+                                <input type="text" name="location" class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">LinkedIn URL</label>
+                            <input type="url" name="linkedin" class="form-input" placeholder="https://www.linkedin.com/in/…">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Portfolio / GitHub (optional)</label>
+                            <input type="url" name="portfolio" class="form-input" placeholder="https://…">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Salary Expectation (optional)</label>
+                            <input type="text" name="salary" class="form-input" placeholder="$xx/hr or $xx,xxx/yr">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Cover Letter / Notes <span class="required">*</span></label>
+                            <textarea name="cover_letter" class="form-textarea" required placeholder="Tell us about your experience and why you're interested in joining Dream Team Automation..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Résumé / CV (PDF/DOC, max 5 MB) <span class="required">*</span></label>
+                            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+                            <small style="color: var(--text-muted); display: block; margin-top: 0.5rem;">Allowed: .pdf, .doc, .docx • Max size: 5 MB</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-checkbox">
+                                <input type="checkbox" name="consent" required>
+                                <span style="color: var(--text-secondary);">I agree to be contacted about this application.</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <span>Submit Application</span>
+                            <span class="btn-arrow">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="fade-in stagger-2">
+                <div class="card mb-2">
+                    <h3 class="card-title mb-2">Open Positions</h3>
+                    <ul class="role-list" style="grid-template-columns: 1fr;">
+                        <li>Engineering Manager</li>
+                        <li>Design Lead / Checker</li>
+                        <li>Mechanical Designer (BIW / Fixtures / EOAT)</li>
+                        <li>Project Engineer</li>
+                        <li>Simulation / Process Engineer</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3 class="card-title mb-2">Why Join Us?</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <span style="color: var(--accent-blue); font-size: 1.2rem;">✓</span>
+                            <div>
+                                <strong style="color: var(--text-primary);">Challenging Projects</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem;">Work on cutting-edge automation for top manufacturers</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <span style="color: var(--accent-blue); font-size: 1.2rem;">✓</span>
+                            <div>
+                                <strong style="color: var(--text-primary);">Growth Opportunities</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem;">Develop your skills and advance your career</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <span style="color: var(--accent-blue); font-size: 1.2rem;">✓</span>
+                            <div>
+                                <strong style="color: var(--text-primary);">Competitive Compensation</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem;">Fair pay and benefits packages</p>
+                            </div>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <span style="color: var(--accent-blue); font-size: 1.2rem;">✓</span>
+                            <div>
+                                <strong style="color: var(--text-primary);">Great Team</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.95rem;">Collaborate with experienced professionals</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 80px;">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Dream Team Automation, LLC</p>
+                <div class="footer-badge">
+                    <span class="footer-text">Clinton Twp., MI</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
