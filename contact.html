@@ -114,7 +114,12 @@
             <div class="fade-in stagger-2">
                 <div class="card">
                     <h3 class="card-title mb-2">Request a Quote</h3>
-                    <form action="https://formspree.io/f/placeholder" method="POST">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="REPLACE_WITH_WEB3FORMS_KEY">
+                        <input type="hidden" name="from_name" value="Dream Team Automation">
+                        <input type="hidden" name="subject" value="New contact from dreamteamautomation.com">
+                        <input type="hidden" name="redirect" value="https://www.dreamteamautomation.com/">
+                        <input type="checkbox" name="botcheck" style="display:none">
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label">Full Name <span class="required">*</span></label>
@@ -179,9 +184,9 @@
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label">Attach File (PDF, STEP, STL, ZIP – max 10MB)</label>
-                            <input type="file" name="attachment" id="attachment" accept=".pdf,.step,.stp,.stl,.zip">
-                            <small style="color: var(--text-muted); display: block; margin-top: 0.5rem;">One file optional. For multiple files, zip them first.</small>
+                            <label class="form-label">File links (optional)</label>
+                            <input type="url" name="file_links" class="form-input" placeholder="Paste Dropbox/Drive/OneDrive links">
+                            <small style="color: var(--text-muted); display: block; margin-top: 0.5rem;">For files, share a link (Dropbox/Drive/OneDrive) or email sales@dreamteamautomation.com.</small>
                         </div>
                         
                         <div class="form-group">
