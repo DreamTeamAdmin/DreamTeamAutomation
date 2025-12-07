@@ -1,0 +1,83 @@
+/* Azure/Entra sign-in branding – matches favicon/background palette */
+:root {
+  --brand-bg: #0f1419;
+  --brand-muted: #1b222c;
+  --brand-accent: #6f7c8f;
+  --brand-text: #e8eaed;
+  --brand-border: #2a3340;
+  --brand-focus: #9aa6b7;
+}
+
+body {
+  background: var(--brand-bg) !important;
+  color: var(--brand-text) !important;
+}
+
+/* keep background area consistent with uploaded image */
+#background_branding_container,
+#brandingWrapper {
+  background: var(--brand-bg) !important;
+}
+
+/* card / panel */
+#loginPanel,
+.panel,
+.section {
+  background: rgba(15, 20, 25, 0.7) !important;
+  border: 1px solid var(--brand-border) !important;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35) !important;
+  color: var(--brand-text) !important;
+}
+
+/* text fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  background: var(--brand-muted) !important;
+  border: 1px solid var(--brand-border) !important;
+  color: var(--brand-text) !important;
+  box-shadow: none !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: var(--brand-focus) !important;
+  outline: 2px solid rgba(154, 166, 183, 0.5) !important;
+}
+
+/* primary buttons */
+button,
+input[type="submit"],
+input[type="button"] {
+  background: linear-gradient(135deg, #4a5568, #6f7c8f) !important;
+  border: 1px solid var(--brand-border) !important;
+  color: var(--brand-text) !important;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25) !important;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: linear-gradient(135deg, #5a667a, #7f8b9c) !important;
+}
+
+/* links */
+a {
+  color: var(--brand-accent) !important;
+}
+
+a:hover {
+  color: #c4cdd8 !important;
+}
+
+/* error text */
+.error,
+.error-text {
+  color: #f5a097 !important;
+}
+
