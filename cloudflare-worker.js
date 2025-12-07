@@ -41,15 +41,24 @@ export default {
 
     const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
+      headers: { 'Accept': 'application/json' },
       body: payload
     });
+
+    // Forward the JSON body for easier debugging
+    const contentType = res.headers.get('content-type') || '';
+    let body = res.body;
+    if (contentType.includes('application/json')) {
+      const json = await res.clone().json();
+      body = JSON.stringify(json);
+    }
 
     const headers = new Headers(res.headers);
     headers.set('Access-Control-Allow-Origin', corsHeaders['Access-Control-Allow-Origin']);
     headers.set('Access-Control-Allow-Methods', corsHeaders['Access-Control-Allow-Methods']);
     headers.set('Access-Control-Allow-Headers', corsHeaders['Access-Control-Allow-Headers']);
 
-    return new Response(res.body, { status: res.status, headers });
+    return new Response(body, { status: res.status, headers });
   }
 };
 
