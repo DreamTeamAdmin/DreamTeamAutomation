@@ -64,7 +64,12 @@
             <div class="fade-in">
                 <div class="card">
                     <h3 class="card-title mb-2">Submit Your Application</h3>
-                    <form action="https://formspree.io/f/placeholder" method="POST" enctype="multipart/form-data">
+                    <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="access_key" value="188bbf46-3ea0-4da1-a88c-50b7a577ad58">
+                        <input type="hidden" name="redirect" value="https://dreamteamautomation.com/thank-you.html">
+                        <input type="hidden" name="from_name" value="Dream Team Automation Careers">
+                        <input type="hidden" name="subject" value="New career application from dreamteamautomation.com">
+                        <input type="checkbox" name="botcheck" style="display:none">
                         <div class="form-group">
                             <label class="form-label">Position of Interest <span class="required">*</span></label>
                             <select name="position" class="form-select" required>
@@ -212,6 +217,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
 
